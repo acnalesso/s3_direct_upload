@@ -21,7 +21,7 @@ module S3DirectUpload
           ssl: true,
           acl: "public-read",
           expiration: 10.hours.from_now.utc.iso8601,
-          max_file_size: 500.megabytes,
+          max_file_size: 10.megabytes,
           callback_method: "POST",
           callback_param: "file",
           key_starts_with: @key_starts_with,
