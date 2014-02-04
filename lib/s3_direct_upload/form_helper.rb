@@ -22,7 +22,7 @@ module S3DirectUpload
           acl:                    "public-read",
           # expiration: 10.hours.from_now.utc.iso8601,
           expiration:             1.hour.from_now.utc,
-          max_file_size:          10.megabytes,
+          max_file_size:          50.megabytes,
           callback_method:        "POST",
           callback_param:         "file",
           key_starts_with:        @key_starts_with,
